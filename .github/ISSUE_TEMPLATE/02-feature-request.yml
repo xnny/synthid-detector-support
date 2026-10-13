@@ -1,0 +1,41 @@
+name: Feature request / 功能建议
+description: Suggest an improvement to SynthID Detector / 提出扩展功能或体验改进建议
+title: "[Feature] "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        You can write in English or Simplified Chinese. Please [search existing issues](https://github.com/xnny/synthid-detector-support/issues) before suggesting a feature.
+        欢迎使用英文或简体中文，提出建议前请先[搜索已有 Issues](https://github.com/xnny/synthid-detector-support/issues)。
+
+        **This issue and all attachments will be public.** Remove passwords, cookies, tokens, account details, private images, sensitive page content, and authentication parameters in URLs. Redact screenshots and logs before sharing. For private or privacy-related questions, email [iwangtao@gmail.com](mailto:iwangtao@gmail.com).
+        **本 Issue 和所有附件均公开可见。** 请移除密码、Cookie、Token、账号资料、私人图片、敏感页面内容及网址中的认证参数，截图和日志请先脱敏。私人或隐私问题请联系 [iwangtao@gmail.com](mailto:iwangtao@gmail.com)。
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case / 问题或使用场景
+      description: What are you trying to do, and what is difficult about it? / 你想完成什么操作，目前遇到了什么困难？
+    validations:
+      required: true
+  - type: textarea
+    id: suggested-improvement
+    attributes:
+      label: Suggested improvement / 建议的改进
+      description: Describe the feature or behavior you would like. / 请描述你希望增加的功能或改进后的行为。
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives (optional) / 替代方案（选填）
+      description: Have you tried a workaround or considered other approaches? / 你是否尝试过其他解决方法，或考虑过其他方案？
+    validations:
+      required: false
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context (optional) / 补充信息（选填）
+      description: Add examples or redacted screenshots if helpful. Include only information you are comfortable sharing publicly. / 可补充示例或已脱敏的截图；仅填写你愿意公开分享的信息。
+    validations:
+      required: false

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Usage guide / 使用指南
+    url: https://synthid-detector.tto.me/how-to-use/
+    about: Instructions and known limitations / 查看使用说明与已知限制
+  - name: Privacy policy / 隐私政策
+    url: https://synthid-detector.tto.me/privacy/
+    about: How the extension handles images and data / 了解扩展如何处理图片和数据

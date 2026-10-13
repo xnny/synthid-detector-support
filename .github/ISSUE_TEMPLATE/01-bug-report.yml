@@ -1,0 +1,88 @@
+name: Bug report / 问题反馈
+description: Report a problem with SynthID Detector / 反馈扩展使用中遇到的问题
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        You can write in English or Simplified Chinese. Please [search existing issues](https://github.com/xnny/synthid-detector-support/issues) and check the [usage guide](https://synthid-detector.tto.me/how-to-use/) first.
+        欢迎使用英文或简体中文。提交前请先[搜索已有问题](https://github.com/xnny/synthid-detector-support/issues)并查看[使用指南](https://synthid-detector.tto.me/how-to-use/)。
+
+        **This issue and all attachments will be public.** Remove passwords, cookies, tokens, account details, private images, sensitive page content, and authentication parameters in URLs. Redact screenshots and logs before sharing. For private or privacy-related questions, email [iwangtao@gmail.com](mailto:iwangtao@gmail.com).
+        **本 Issue 和所有附件均公开可见。** 请移除密码、Cookie、Token、账号资料、私人图片、敏感页面内容及网址中的认证参数，截图和日志请先脱敏。私人或隐私问题请联系 [iwangtao@gmail.com](mailto:iwangtao@gmail.com)。
+  - type: input
+    id: extension-version
+    attributes:
+      label: Extension version / 扩展版本
+      description: Find it on the extension card at chrome://extensions. / 可在 chrome://extensions 的扩展卡片中查看。
+      placeholder: "0.2.1"
+    validations:
+      required: true
+  - type: input
+    id: browser-version
+    attributes:
+      label: Chrome or browser version / Chrome 或浏览器版本
+      description: Find Chrome's version at chrome://settings/help. If using another browser, include its name. / 可在 chrome://settings/help 查看 Chrome 版本；使用其他浏览器时请同时填写名称。
+      placeholder: Chrome + full version / Chrome 及完整版本号
+    validations:
+      required: true
+  - type: input
+    id: operating-system
+    attributes:
+      label: Operating system / 操作系统
+      description: Include the system name and version. / 请填写系统名称和版本。
+      placeholder: Windows 11, macOS 15, Ubuntu 24.04, etc.
+    validations:
+      required: true
+  - type: dropdown
+    id: detection-method
+    attributes:
+      label: How did you use the extension? / 使用方式
+      options:
+        - Right-click an image / 右键图片
+        - Select an image with the toolbar or shortcut / 工具栏或快捷键点选图片
+        - Select a screen area / 框选截图
+        - Other or multiple methods / 其他或多种方式
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: Steps to reproduce / 复现步骤
+      description: Describe the actions that lead to the problem. Include only public example URLs, without authentication parameters. / 请按顺序描述触发问题的操作；示例网址仅限可公开分享且不含认证参数的网址。
+      placeholder: |
+        1. Open a page / 打开页面
+        2. Use the extension / 使用扩展
+        3. Observe the problem / 出现问题
+    validations:
+      required: true
+  - type: textarea
+    id: expected-result
+    attributes:
+      label: Expected result / 预期结果
+      description: What did you expect to happen? / 你期望发生什么？
+    validations:
+      required: true
+  - type: textarea
+    id: actual-result
+    attributes:
+      label: Actual result / 实际结果
+      description: What happened? Include any error message, with sensitive information removed. / 实际发生了什么？如有错误提示请附上，并移除敏感信息。
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots (optional) / 截图（选填）
+      description: Attach screenshots only after redacting private content. Do not upload private images. / 可附上已脱敏的截图，请勿上传私人图片。
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs (optional) / 日志（选填）
+      description: Paste relevant logs only if available. Remove tokens, cookies, account details, and private URLs. / 如有相关日志可粘贴在此；请移除 Token、Cookie、账号资料和私人网址。
+      render: text
+    validations:
+      required: false
